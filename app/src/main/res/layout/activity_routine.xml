@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_routine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amber_100"
+    tools:context="com.akash.healthcontroller.RoutineActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/twenty_dp"
+        android:text="Set your daily Routine of eating.."
+        android:background="@color/green_light"
+        android:padding="@dimen/twenty_dp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty_dp"
+        android:orientation="horizontal"
+        android:background="#eee"
+        android:layout_marginBottom="@dimen/one_dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Morning Eating Time"
+            android:layout_weight="6"
+            />
+        <Button
+            android:id="@+id/btn_morning_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Enter Time"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/five_dp"
+        android:orientation="horizontal"
+        android:background="#eee"
+        android:layout_marginBottom="@dimen/one_dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Noon Eating Time"
+            android:layout_weight="6"
+            />
+        <Button
+            android:id="@+id/btn_noon_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Enter Time"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/five_dp"
+        android:orientation="horizontal"
+        android:background="#eee"
+        android:layout_marginBottom="@dimen/one_dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Afternoon Eating Time"
+            android:layout_weight="6"
+            />
+        <Button
+            android:id="@+id/btn_afternoon_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Enter Time"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/five_dp"
+        android:orientation="horizontal"
+        android:background="#eee"
+        android:layout_marginBottom="@dimen/one_dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Night Eating Time"
+            android:layout_weight="6"
+            />
+        <Button
+            android:id="@+id/btn_night_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Enter Time"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:id="@+id/saveRoutine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_style"
+        android:text="Save"
+        />
+
+</LinearLayout>

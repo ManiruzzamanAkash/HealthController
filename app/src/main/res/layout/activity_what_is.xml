@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_what_is"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akash.healthcontroller.WhatIs"
+    android:background="@color/amber_100"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is BMI"
+                android:textSize="@dimen/twenty_five_dp"
+                android:textColor="@color/amber_900"
+                android:gravity="center"
+                android:padding="@dimen/twenty_dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bmi_string"
+                android:textSize="@dimen/twenty_dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is BMR"
+                android:textSize="@dimen/twenty_five_dp"
+                android:textColor="@color/amber_900"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:padding="@dimen/twenty_dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bmr_string"
+                android:textSize="@dimen/twenty_dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

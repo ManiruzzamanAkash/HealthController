@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/blue_grey_50"
+    android:padding="15dp"
+    android:layout_marginTop="2dp"
+    >
+
+        <TextView
+            android:id="@+id/text_food_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="Food Name"
+            />
+
+        <TextView
+            android:id="@+id/text_food_calorie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Food Calorie"
+            />
+
+</LinearLayout>

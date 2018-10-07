@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:padding="@dimen/fifteen_dp"
+    android:background="@color/amber_100"
+    tools:showIn="@layout/app_bar_main">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_enter_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_welcome"
+                android:textStyle="bold"
+                android:textSize="@dimen/top_title_text_big"
+                android:gravity="center"
+                android:paddingBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#eee"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#35B14A"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:text="Select Gender :"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/radio_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_btn_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        />
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#eee"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Age"
+                    android:layout_weight="3"
+                    android:background="#35B14A"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/edit_txt_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="20 (in years)"
+                    android:layout_weight="6"
+                    android:inputType="number"
+                    android:gravity="right"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#eee"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@color/green_light"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:text="Enter Height"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_txt_height"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="200 (in cm)"
+                    android:layout_weight="6"
+                    android:inputType="number"
+                    android:gravity="right"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#eee"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#35B14A"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:text="Enter Weight"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_txt_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="50 (in Kg)"
+                    android:layout_weight="6"
+                    android:inputType="number"
+                    android:gravity="right|center_vertical"
+
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:text="Reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/alert_button"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/btn_reset"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp" />
+                <Button
+                    android:text="Check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/button_style"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/btn_check"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_show_bmr_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txt_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Result : "
+                    android:textSize="@dimen/twenty_five_dp"
+                    android:gravity="center"
+                    android:textColor="@color/green_deep"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:showDividers="beginning"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BMI Classfifications"
+                    android:textSize="@dimen/twenty_five_dp"
+                    android:textColor="@color/theme_deep"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/one_dp"
+                    android:background="@color/green_200"
+                    android:padding="@dimen/one_dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Underwight"
+                        android:layout_weight="6"
+                        android:textColor="@color/red_800"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="less than 16"
+                        android:layout_weight="2"
+                        android:textColor="@color/red_800"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/one_dp"
+                    android:background="@color/green_200"
+                    android:padding="@dimen/one_dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Underwight"
+                        android:layout_weight="6"
+                        android:textColor="@color/red_deep"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="16-18.5"
+                        android:layout_weight="2"
+                        android:textColor="@color/red_deep"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/one_dp"
+                    android:background="@color/green_200"
+                    android:padding="@dimen/one_dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Best Weight and Hight Combination"
+                        android:layout_weight="6"
+                        android:textColor="@color/green_900"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="18.5 - 25"
+                        android:layout_weight="2"
+                        android:textColor="@color/green_900"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/one_dp"
+                    android:background="@color/green_200"
+                    android:padding="@dimen/one_dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Overweight"
+                        android:layout_weight="6"
+                        android:textColor="@color/red_300"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="25 - 30"
+                        android:layout_weight="2"
+                        android:textColor="@color/red_300"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/one_dp"
+                    android:background="@color/green_200"
+                    android:padding="@dimen/one_dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Very Overweight"
+                        android:layout_weight="6"
+                        android:textColor="@color/red_700"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="30 - 40"
+                        android:layout_weight="2"
+                        android:textColor="@color/red_700"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/one_dp"
+                    android:background="@color/green_200"
+                    android:padding="@dimen/one_dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Excess Overweight"
+                        android:layout_weight="6"
+                        android:textColor="@color/red_900"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="> 40"
+                        android:layout_weight="2"
+                        android:textColor="@color/red_900"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn More About BMI and BMR"
+                android:id="@+id/learn_more_btn"
+                android:padding="@dimen/twenty_dp"
+                android:background="@drawable/button_style"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:textColor="@color/blue_50" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See the food list and their calorie rate"
+                android:id="@+id/btnFoodList"
+                android:padding="@dimen/twenty_dp"
+                android:background="@drawable/button_style"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:textColor="@color/blue_50" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
